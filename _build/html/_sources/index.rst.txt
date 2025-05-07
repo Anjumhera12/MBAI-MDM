@@ -20,8 +20,10 @@ This guide provides comprehensive instructions for configuring, managing, and ef
    :caption: Contents:
    
    getting_started
+   home
    data_stewardship
    master
+   fulfillment
    report
    settings
-   home
+   

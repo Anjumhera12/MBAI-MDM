@@ -1,5 +1,5 @@
-Reports
--------
+5. Reports
+----------
 
 The Reports Dashboard provides users with comprehensive insights into data distribution and quality through global insights and composition charts. It offers a summary of key data processing metrics over a selected duration—enabling users to explore high-level data distribution, monitor system performance, track growth trends, evaluate operational efficiency, and analyze entity relationships. To access these insights, navigate to **Reports** from the left-side menu.   
 

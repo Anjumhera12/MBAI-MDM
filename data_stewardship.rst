@@ -54,8 +54,20 @@ The existing records are displayed in a tabular format:
    * - Phone No
      - The primary contact number for the company or individual.
    * - Entity Type
-     - Displays business classification along with an entity type symbol  
-       (SL - Single Location, BR - Branch, GP - Global Parent, DP - Domestic Parent, HQ - Headquarters, PA - Parent).
+     - Displays business classification along with an entity type symbol
+
+       * SL - Single Location 
+
+       * BR - Branch 
+
+       * GP - Global Parent
+
+       * DP - Domestic Parent 
+
+       * HQ - Headquarters 
+
+       * PA - Parent
+
    * - Actions
      - Available options for managing the record, including Merge All, Reject All, and Merge Selected.
 
@@ -93,7 +105,19 @@ The results are displayed in a tabular format:
     * - Match Confidence Score Range
       - Indicates the confidence level of the match based on system logic.
     * - Entity Type
-      - Displays business classification along with an entity type symbol (SL - Single Location, BR - Branch, GP - Global Parent, DP - Domestic Parent, HQ - Headquarters, PA - Parent).
+      - Displays business classification along with an entity type symbol.
+      
+        * SL - Single Location 
+
+        * BR - Branch 
+
+        * GP - Global Parent
+
+        * DP - Domestic Parent 
+
+        * HQ - Headquarters 
+
+        * PA - Parent       
 
 **Note**:  
 

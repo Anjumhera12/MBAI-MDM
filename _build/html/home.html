@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Data Stewardship" href="data_stewardship.html" /><link rel="prev" title="Getting Started" href="getting_started.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="2. Data Stewardship" href="data_stewardship.html" /><link rel="prev" title="Getting Started" href="getting_started.html" />
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
-        <title>Home - MDM documentation</title>
+        <title>1. Home - MDM documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=302659d7" />
@@ -178,7 +178,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -201,11 +201,12 @@
   <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Home</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_stewardship.html">Data Stewardship</a></li>
-<li class="toctree-l1"><a class="reference internal" href="master.html">Master</a></li>
-<li class="toctree-l1"><a class="reference internal" href="report.html">Reports</a></li>
-<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">1. Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_stewardship.html">2. Data Stewardship</a></li>
+<li class="toctree-l1"><a class="reference internal" href="master.html">3. Master</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fulfillment.html">4. Fulfillment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="report.html">5. Reports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">6. Settings</a></li>
 </ul>
 
 </div>
@@ -240,15 +241,40 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main" id="furo-main-content">
           <section id="home">
-<h1>Home<a class="headerlink" href="#home" title="Link to this heading">¶</a></h1>
+<h1>1. Home<a class="headerlink" href="#home" title="Link to this heading">¶</a></h1>
 <p>The dashboard offers a real-time overview of key metrics to monitor system performance and data quality. Designed with a data-forward approach, it provides instant visibility into your data’s health, performance, and trends.</p>
+<p>On the top-right corner of the screen, you’ll find a <strong>flag icon</strong> indicating the current <strong>locale</strong> settings- in this case, <strong>US English</strong>. This signifies that the application is currently configured for users in the United States, using English as the language.</p>
+<figure class="align-default">
+<img alt="_images/4.png" src="_images/4.png" />
+</figure>
+<p>Next to the flag, you’ll see the <strong>name and role</strong> of the logged-in user (in this case, Name of the user and Data Steward). Clicking on this icon will open a dropdown menu with the <strong>Logout</strong> option.</p>
+<section id="process-indicator">
+<h2>1.1 Process Indicator<a class="headerlink" href="#process-indicator" title="Link to this heading">¶</a></h2>
+<p>The <strong>Process Indicator</strong> provides users with real-time updates on the status of key background operations. It is designed to enhance transparency and user awareness during data-related workflows.</p>
+<figure class="align-default">
+<img alt="_images/5.png" src="_images/5.png" />
+</figure>
+<p>The indicator monitors and displays the progress of the following critical processes:</p>
+<ul class="simple">
+<li><p><strong>Import</strong>: Displays the current status of active data import operations.</p></li>
+<li><p><strong>Data Mastering</strong>: Shows real-time progress for data mastering tasks, including matching, deduplication, and enrichment.</p></li>
+<li><p><strong>Export</strong>: Indicates the status of ongoing data export activities.</p></li>
+</ul>
+<p>Each active process will include:</p>
+<ul class="simple">
+<li><p><strong>Process Name</strong>: Clearly labeled (e.g., Import, Data Mastering, Export).</p></li>
+<li><p><strong>Completion Percentage</strong>: Displays a numeric value indicating how much of the process has been completed (e.g., 65%).</p></li>
+<li><p><strong>Progress Bar</strong>: A visual representation of completion status that dynamically fills based on progress.</p></li>
+</ul>
+<p>Right from the <strong>Home Screen</strong>, you get a real-time snapshot of your data ecosystem that displays key performance indicators (KPIs) such as <strong>Total Records</strong>, <strong>Mastered Records</strong>, and <strong>Duplicates</strong>-each showing value trends that highlight increases or decreases over time.</p>
+</section>
 </section>
 
         </article>
@@ -261,7 +287,7 @@
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Data Stewardship</div>
+                <div class="title">2. Data Stewardship</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -294,8 +320,27 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">1. Home</a><ul>
+<li><a class="reference internal" href="#process-indicator">1.1 Process Indicator</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>

@@ -1,5 +1,5 @@
-Master 
-------
+3. Master 
+---------
 
 With MatchbookAI’s **Master** module, you can seamlessly ingest data from batch or streaming sources, then **standardize and cleanse** it to ensure quality. Using **AI-driven logic**, the platform identifies and merges duplicates, creating a unified view. It gives you clean and consolidated data, to power smarter decisions and analytics across your platforms. 
 
