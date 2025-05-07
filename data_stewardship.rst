@@ -1,5 +1,5 @@
-Data Stewardship 
-----------------
+2. Data Stewardship 
+-------------------
 
 Data Stewardship ensures high-quality, accurate, and reliable data across an organization. Data Stewards manage data assets, resolve discrepancies, and ensure correct data matching. The process involves evaluating and confirming potential matches, resolving low-confidence records, addressing unmatched data, and verifying final matched records before processing. Navigate to **Data Stewardship** from the left-side menu.
 

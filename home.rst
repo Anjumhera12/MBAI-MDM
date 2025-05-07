@@ -1,4 +1,4 @@
-Home 
+1. Home 
 ----
 
 The dashboard offers a real-time overview of key metrics to monitor system performance and data quality. Designed with a data-forward approach, it provides instant visibility into your data’s health, performance, and trends. 
