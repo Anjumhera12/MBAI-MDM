@@ -274,6 +274,663 @@
 <li><p><strong>Progress Bar</strong>: A visual representation of completion status that dynamically fills based on progress.</p></li>
 </ul>
 <p>Right from the <strong>Home Screen</strong>, you get a real-time snapshot of your data ecosystem that displays key performance indicators (KPIs) such as <strong>Total Records</strong>, <strong>Mastered Records</strong>, and <strong>Duplicates</strong>-each showing value trends that highlight increases or decreases over time.</p>
+<figure class="align-default">
+<img alt="_images/6.png" src="_images/6.png" />
+</figure>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Total Records</p></td>
+<td><p>Displays the total number of records added to the system.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mastered Records</p></td>
+<td><p>Shows the count of records that have been matched, merged, and enriched into a master entity.</p></td>
+</tr>
+<tr class="row-even"><td><p>Duplicates</p></td>
+<td><p>Indicates the number of records identified as duplicates during the data mastering process.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="expanded-view-for-detailed-insights">
+<h2>1.2 Expanded View for Detailed Insights<a class="headerlink" href="#expanded-view-for-detailed-insights" title="Link to this heading">¶</a></h2>
+<p>Click the <strong>expand icon</strong> as shown in the screen below to unlock additional insights. Expanding the ticker bar reveals a <strong>detailed dashboard</strong> with visual reports that provide key data insights.</p>
+<figure class="align-default">
+<img alt="_images/7.png" src="_images/7.png" />
+</figure>
+<p>The table below gives the description of each insight:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Insight Area</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Details Displayed</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Geographical Distribution</p></td>
+<td><p>Visualizes how records are distributed across different countries. The top 5 countries are shown individually, while the rest are grouped under “Others” for clarity.</p></td>
+<td><p>when you hover on each country, you will see:</p>
+<ul class="simple">
+<li><p><strong>Country Name</strong>: Name of the country represented</p></li>
+<li><p><strong>Record Count</strong>: Number of records per country</p></li>
+<li><p><strong>Percentage of Total</strong>: Share of each country’s records within the total dataset</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Industry Distribution</p></td>
+<td><p>Highlights the composition of records based on their industry classification to help identify dominant sectors.</p></td>
+<td><ul class="simple">
+<li><p><strong>Industry Name</strong>: The specific industry (e.g., Finance, Retail).</p></li>
+<li><p><strong>Percentage Share</strong>: Proportion of total records within each industry.</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Company Size Distribution</p></td>
+<td><p>Breaks down entities by their size and structural type to help understand customer or data composition.</p></td>
+<td><ul class="simple">
+<li><p><strong>Structure: Single</strong>-location vs. Group companies</p></li>
+<li><p><strong>Size Segments</strong>: Small, Medium, Large</p></li>
+<li><p><strong>Record Count &amp; Percentage</strong>: Number and percentage of entities within each category</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Data Quality Metrics</p></td>
+<td><p>Offers insights into the overall quality and completeness of the dataset.</p></td>
+<td><ul class="simple">
+<li><p><strong>Average Addresses per Company</strong>: Mean number of addresses associated with each entity</p></li>
+<li><p><strong>Completeness Score</strong>: Percentage score reflecting how complete the record fields are across the dataset</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Note</strong>:</p>
+<ul class="simple">
+<li><p>If no data is available then a message appears: <strong>“No records available to display”</strong>.</p></li>
+<li><p>If there is Incomplete data then it displays “–” for missing data.</p></li>
+</ul>
+<p>The number of entities- up to <strong>1,000 mastered records</strong>—is displayed at the top, with their corresponding details presented in a structured <strong>tabular format</strong> for easy review and analysis. Each record includes fields such as <strong>Matchbook ID</strong>, <strong>Company Name</strong>, <strong>Address</strong>, <strong>ID</strong>, <strong>Contact Name</strong>, <strong>Website</strong>, <strong>Phone Number</strong>, <strong>Status</strong>, and <strong>Entity</strong> Type. A <strong>single</strong>, <strong>unified filter</strong> is available to help users quickly narrow down results based on <strong>ID and company</strong> details.</p>
+<figure class="align-default">
+<img alt="_images/8.png" src="_images/8.png" />
+</figure>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Matchbook ID</p></td>
+<td><p>Unique system-generated ID assigned to the master record for tracking and integration purposes.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Company Name</p></td>
+<td><p>The official registered name of the company or entity.</p></td>
+</tr>
+<tr class="row-even"><td><p>Address</p></td>
+<td><p>Physical location(s) associated with the company.
+<strong>Note</strong>: A company can have multiple addresses.</p></td>
+</tr>
+<tr class="row-odd"><td><p>ID</p></td>
+<td><p>One or more unique identifiers associated with the entity.
+List of Identifiers:</p>
+<ol class="arabic simple">
+<li><p>National ID (NID)</p></li>
+<li><p>Account ID (AID)</p></li>
+<li><p>Customer ID (CID)</p></li>
+<li><p>Finance ID (FID)</p></li>
+<li><p>Supplier ID (SID)</p></li>
+<li><p>Registration Number</p></li>
+<li><p>DUNS No.</p></li>
+</ol>
+<p><strong>Note</strong>: There could be multiple IDs from different sources.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>Contact Name</p></td>
+<td><p>The name of the primary contact person associated with the company.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Website</p></td>
+<td><p>The company’s official website URL.</p></td>
+</tr>
+<tr class="row-even"><td><p>Phone no.</p></td>
+<td><p>The primary contact number for the company.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Status</p></td>
+<td><p>Indicates the current state of the master record (e.g., active or inactive).</p></td>
+</tr>
+<tr class="row-even"><td><p>Entity Type</p></td>
+<td><p>Displays business classification along with an entity type symbol</p>
+<ul class="simple">
+<li><p>SL - Single Location</p></li>
+<li><p>BR - Branch</p></li>
+<li><p>GP - Global Parent</p></li>
+<li><p>DP - Domestic Parent</p></li>
+<li><p>HQ - Headquarters</p></li>
+<li><p>PA - Parent</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Note</strong>:</p>
+<ul class="simple">
+<li><p>Pagination will initially display the first 20 records. Users can click the <strong>“&gt;”</strong> button to view the next 20 records or the <strong>“&lt;”</strong> button to navigate back to the previous 20 records. The system displays <strong>pagination controls</strong> when the number of results exceeds the visible limit, allowing users to navigate between pages and choose the number of records displayed per page.</p></li>
+<li><p>If the data fails to load, a message: “Failed to load mastered records. Please try again.” Is displayed.</p></li>
+<li><p>The missing column entries will be displayed by a blank space.</p></li>
+<li><p>If navigation to Company Details fails, an error message: “Unable to open company details. Please try again later.” is shown up.</p></li>
+</ul>
+</section>
+<section id="filters">
+<h2>1.3 Filters<a class="headerlink" href="#filters" title="Link to this heading">¶</a></h2>
+<p>Click on the <strong>Filters</strong> expand icon to access advanced filtering options. As a <strong>Data Steward</strong> or <strong>Administrator</strong>, you can apply filters to the Mastered Records table to <strong>quickly find specific records based on key criteria</strong>, helping streamline data review and decision-making.</p>
+<figure class="align-default">
+<img alt="_images/9.png" src="_images/9.png" />
+</figure>
+<p>Users should be able to filter by following fields: Matchbook ID, Company Name, Address, City, State, Country, Postal code, ID, ID Type, Status, Entity Type.</p>
+<figure class="align-default">
+<img alt="_images/10.png" src="_images/10.png" />
+</figure>
+<p>The applied filters will be visible, allowing you to review and verify the filtering criteria used. This helps in refining searches, adjusting if necessary, and ensuring that the displayed data accurately matches the specified conditions. Once all necessary details are entered, click <strong>Apply Filter</strong> to update the results based on your criteria.</p>
+<figure class="align-default" id="id1">
+<img alt="_images/11.png" src="_images/11.png" />
+<figcaption>
+<p><span class="caption-text">You can now see the results displayed in a tabular format, where each row represents a unique mastered record. The table is structured to provide a clear, organized view of key data attributes such as Matchbook ID, Company Name, Address, ID, Contact Name, Website, Phone No., Status, and Entity Type. This layout ensures easy comparison, efficient scanning, and quick access to essential business information for analysis and decision-making.</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+<div class="legend">
+<figure class="align-default">
+<img alt="_images/12.png" src="_images/12.png" />
+</figure>
+</div>
+</figcaption>
+</figure>
+<dl class="simple">
+<dt><strong>Note</strong>: If no records match the applied filters, a message is displayed:</dt><dd><p><strong>“No mastered records found for the selected filters.”</strong></p>
+</dd>
+</dl>
+<p>When the user clicks/hover on a row (excluding the <strong>Matchbook ID</strong>), a compact view comes up otherwise select the <strong>View Record</strong> button, a <strong>side panel</strong> will appear, presenting detailed information about the selected entity.</p>
+<figure class="align-default">
+<img alt="_images/13.png" src="_images/13.png" />
+</figure>
+<p>The side panel will include the following sections:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Company Overview</p></td>
+<td><p>This section provides a quick snapshot of the selected company, highlighting essential metadata (such as Company Name, Matchbook ID, Status, Entity Type, Last Update) for identification and record tracking.</p>
+<ul class="simple">
+<li><p><strong>Company Name</strong>: Official registered name of the entity.</p></li>
+<li><p><strong>Matchbook ID</strong>: Unique internal identifier assigned by Matchbook AI.</p></li>
+<li><p><strong>Status</strong>: Indicates whether the record is Active or Inactive.</p></li>
+<li><p><strong>Entity Type</strong>: Classification of the entity (e.g., Global Parent, Branch, HQ).</p></li>
+<li><p><strong>Last Update</strong>: Timestamp showing the most recent update to the record.</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Primary Address</p></td>
+<td><p>Shows the official, primary address of the company along with an interactive map. Useful for verifying location or for quick geographical context.</p>
+<ul class="simple">
+<li><p><strong>Primary Address</strong>: Full street address, including city, state, and ZIP/postal code.</p></li>
+<li><p><strong>Map Link</strong>: A clickable link or embedded map that redirects to Google Maps when clicked for location visualization.</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Contact Profiles</p></td>
+<td><p>Displays alternative names or key contact identifiers tied to the company, along with certification badges if applicable.</p>
+<ul class="simple">
+<li><p><strong>Type</strong>: Identifies the nature of the contact detail (e.g., Primary Name, Alternate Name).</p></li>
+<li><p><strong>Value</strong>: The actual name or contact identifier.</p></li>
+<li><p><strong>Cert Code</strong>: Badge or label indicating data quality or certification level (e.g., Diamond, Platinum).</p></li>
+<li><p><strong>Sorting</strong>: User can click on column headers to sort by that attribute.</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Included Companies</p></td>
+<td><p>Displays any subsidiaries, branches, or related legal entities included within the selected master record.</p>
+<ul class="simple">
+<li><p><strong>Matchbook ID</strong>: Unique Matchbook identifier for each included entity.</p></li>
+<li><p><strong>Company Name</strong>: Name of the associated or included company.</p></li>
+<li><p>Sorting is available for better navigation.</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Note</strong>:</p>
+<ul class="simple">
+<li><p>If detailed data fails to load, a message is displayed: <strong>“Failed to load record details. Please try again.”</strong></p></li>
+<li><p>If history data fails to load, a message is displayed: <strong>“Failed to load record history. Please refresh the panel.”</strong></p></li>
+<li><p>If map integration fails, a message is displayed: <strong>“Map not available.”</strong></p></li>
+</ul>
+</section>
+<section id="view-full-details">
+<h2>1.4 View Full Details<a class="headerlink" href="#view-full-details" title="Link to this heading">¶</a></h2>
+<p>By clicking on <strong>View Full Details</strong>, users can access a comprehensive Company profile and also includes in-depth information such as the company’s <strong>key executives</strong>, <strong>corporate structure</strong>, <strong>official identifiers</strong>, a list of <strong>included or related companies</strong>, and a full <strong>audit trail</strong> of actions performed on the entity—providing a complete picture for governance, compliance, and analysis.</p>
+<figure class="align-default">
+<img alt="_images/14.png" src="_images/14.png" />
+</figure>
+<p><strong>Note</strong>: If detailed data fails to load, displays a message: <strong>“Failed to load record details. Please try again.”</strong></p>
+<p>When the View Full Details is clicked, the below screen shows up.</p>
+<figure class="align-default">
+<img alt="_images/14-1.png" src="_images/14-1.png" />
+</figure>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Company Name</p></td>
+<td><p>Displays the official registered name of the entity.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Company Logo</p></td>
+<td><p>Shows the visual brand mark of the company, if available.</p></td>
+</tr>
+<tr class="row-even"><td><p>Matchbook ID</p></td>
+<td><p>Unique identifier assigned to the entity by the Matchbook AI system.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Status - Active/Inactive</p></td>
+<td><p>Indicates whether the company is currently operational.</p></td>
+</tr>
+<tr class="row-even"><td><p>Address</p></td>
+<td><p>Shows the company’s primary business address.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Social Media Links</p></td>
+<td><p>Provides clickable links to the company’s official social media profiles.</p></td>
+</tr>
+<tr class="row-even"><td><p>Primary Contact</p></td>
+<td><p>Shows the main point of contact for the organization.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Website</p></td>
+<td><p>Displays the official company website URL.</p></td>
+</tr>
+<tr class="row-even"><td><p>Phone Number</p></td>
+<td><p>Lists the main telephone number associated with the company.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Primary Contact Rank/Position</p></td>
+<td><p>Shows the designation or role of the listed primary contact.</p></td>
+</tr>
+<tr class="row-even"><td><p>Year Started</p></td>
+<td><p>Indicates the year the company was established.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Employee Count</p></td>
+<td><p>Displays the number of employees, either actual or modeled.</p></td>
+</tr>
+<tr class="row-even"><td><p>Locations</p></td>
+<td><p>Lists the company’s operational or registered office locations.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Revenue Modeled</p></td>
+<td><p>Displays estimated annual revenue based on third-party modeling.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Download</strong>: If you want to download the company details and include company records in JSON format from the View Details page, you can do so to analyze or share the data externally in a structured and standardized format.</p>
+<section id="company-profile">
+<h3><em>Company Profile</em><a class="headerlink" href="#company-profile" title="Link to this heading">¶</a></h3>
+<p>The <strong>Company Profile</strong> tab is the default landing section when a user opens a company’s detailed view. It offers a consolidated overview of the entity’s foundational attributes, demographics, financials, and associated metadata.</p>
+<figure class="align-default">
+<img alt="_images/14-2.png" src="_images/14-2.png" />
+</figure>
+<p><strong>Core Company Details</strong>: The Core Company Details section provides fundamental and high-level information about the company. This includes its official identity, contact points, website, and industry sector.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Company Name</p></td>
+<td><p>The official, standardized name of the company</p></td>
+</tr>
+<tr class="row-odd"><td><p>Entity Type</p></td>
+<td><p>The classification of the company within the corporate hierarchy (e.g., Single Location, Branch, Global Parent, Domestic Parent, Head Quarters).</p></td>
+</tr>
+<tr class="row-even"><td><p>Phone Number</p></td>
+<td><p>The primary telephone number associated with the entity.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Website</p></td>
+<td><p>The official website URL for the company.</p></td>
+</tr>
+<tr class="row-even"><td><p>Industry</p></td>
+<td><p>The primary sector or industry the business operates in, based on standard industry classifications.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Competitors</p></td>
+<td><p>A list of peer or rival companies, useful for benchmarking or market intelligence purposes.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Crosswalk</strong>: Displays the source systems from which the company data was aggregated or matched, providing traceability and multi-source reconciliation.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Crosswalk Name</p></td>
+<td><p>The name of the originating system (e.g., Salesforce, D&amp;B, ZoomInfo)</p></td>
+</tr>
+<tr class="row-odd"><td><p>ID</p></td>
+<td><p>The corresponding unique identifier from that source system.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Company Demographics</strong>: The <strong>Company Demographics</strong> section offers essential background information about the company’s history, structure, and size.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Founding Date</p></td>
+<td><p>The official year or date when the company was established.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Company Age</p></td>
+<td><p>Automatically calculated based on the founding date.</p></td>
+</tr>
+<tr class="row-even"><td><p>Employee Count (Actual)</p></td>
+<td><p>The current number of full-time and part-time employees, where available.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Company Type</p></td>
+<td><p>Describes the operational nature of the entity (e.g., Private, Public, Non-Profit).</p></td>
+</tr>
+<tr class="row-even"><td><p>Ownership Type</p></td>
+<td><p>Indicates whether the company is independently owned, a subsidiary, or part of a group.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Legal Structure</p></td>
+<td><p>Defines the company’s legal form (e.g., LLC, Corporation, Partnership).</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Location Details</strong>: Displays the company’s physical presence and mailing-related addresses. An interactive map feature may be provided for the primary address.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Type</p></td>
+<td><p>Identifies if the address is Primary, Secondary, or Mailing.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Primary Address</p></td>
+<td><p>The main business location of the company.</p></td>
+</tr>
+<tr class="row-even"><td><p>Secondary Address</p></td>
+<td><p>An additional physical or operational location.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mailing Address</p></td>
+<td><p>Official address for postal correspondence.</p></td>
+</tr>
+<tr class="row-even"><td><p>Google Maps Link</p></td>
+<td><p>A clickable link that opens the Primary Address location in Google Maps. Useful for visual verification and logistics.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Financial Performance</strong>: Provides insight into the company’s estimated or reported financial data.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Annual Revenue (Modeled)</p></td>
+<td><p>An estimated or reported revenue figure, often based on modeling where direct reporting is unavailable.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Fiscal Year End</p></td>
+<td><p>The closing month of the company’s financial year.</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Report Dated</p></td>
+<td><p>The most recent date when the financial data was updated or confirmed.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="key-executives">
+<h3><em>Key Executives</em><a class="headerlink" href="#key-executives" title="Link to this heading">¶</a></h3>
+<p>The <strong>Key Executives</strong> section highlights major decision-makers and organizational leadership linked to the entity. This helps identify contacts for outreach, verification, or enrichment.</p>
+<figure class="align-default">
+<img alt="_images/14-3.png" src="_images/14-3.png" />
+</figure>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Full name of the executive</p></td>
+</tr>
+<tr class="row-odd"><td><p>Position</p></td>
+<td><p>Title/role within the organization</p></td>
+</tr>
+<tr class="row-even"><td><p>Profile Logo</p></td>
+<td><p>Optional visual logo or avatar if available</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sources</p></td>
+<td><p>The data providers from which this executive information was sourced (ex: D&amp;B, ZoomInfo).</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Note</strong>: Columns are sortable to allow users to prioritize or group executives by role or importance.</p>
+</section>
+<section id="corporate-structure">
+<h3><em>Corporate Structure</em><a class="headerlink" href="#corporate-structure" title="Link to this heading">¶</a></h3>
+<p>The <strong>Corporate Structure</strong> tab visualizes and lists the company’s relationship within its broader entity hierarchy. Users can explore upstream (parent) and downstream (subsidiary) entities.</p>
+<p>Hierarchy Tree View is a visual map showing parent-child relationships.</p>
+<figure class="align-default">
+<img alt="_images/14-4.png" src="_images/14-4.png" />
+</figure>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Search by Company</p></td>
+<td><p>Search functionality to locate related entities in the hierarchy.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Select by Entity Type</p></td>
+<td><p>Filter the structure by entity types (e.g., GP, SL, DP).</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="identifiers">
+<h3><em>Identifiers</em><a class="headerlink" href="#identifiers" title="Link to this heading">¶</a></h3>
+<p>The <strong>Identifiers</strong> section contains a catalog of known unique identifiers tied to the entity, providing traceability across systems and third-party providers.</p>
+<figure class="align-default">
+<img alt="_images/14-5.png" src="_images/14-5.png" />
+</figure>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Type</p></td>
+<td><p>Identifier category (e.g., DUNS, Tax ID, CRM ID).</p></td>
+</tr>
+<tr class="row-odd"><td><p>ID</p></td>
+<td><p>The actual identifier value.</p></td>
+</tr>
+<tr class="row-even"><td><p>Date</p></td>
+<td><p>The timestamp when the identifier was last verified or updated.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="included-companies">
+<h3>Included Companies<a class="headerlink" href="#included-companies" title="Link to this heading">¶</a></h3>
+<p>This section lists all companies that have been merged into the current master record, usually through deduplication or hierarchy-building processes.</p>
+<figure class="align-default">
+<img alt="_images/14-6.png" src="_images/14-6.png" />
+</figure>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Matchbook ID</p></td>
+<td><p>Unique system-generated ID assigned to the master record for tracking and integration purposes.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Company Name</p></td>
+<td><p>The official registered name of the company or entity.</p></td>
+</tr>
+<tr class="row-even"><td><p>Address</p></td>
+<td><p>Physical location(s) associated with the company.
+<strong>Note</strong>: A company can have multiple addresses.</p></td>
+</tr>
+<tr class="row-odd"><td><p>ID</p></td>
+<td><p>One or more unique identifiers associated with the entity.
+List of Identifiers:
+1. National ID (NID)
+2. Account ID (AID)
+3. Customer ID (CID)
+4. Finance ID (FID)
+5. Supplier ID (SID)
+6. Registration Number
+7. DUNS No.
+<strong>Note</strong>: There could be multiple IDs from different sources.</p></td>
+</tr>
+<tr class="row-even"><td><p>Contact Name</p></td>
+<td><p>The name of the primary contact person associated with the company.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Website</p></td>
+<td><p>The company’s official website URL.</p></td>
+</tr>
+<tr class="row-even"><td><p>Phone no.</p></td>
+<td><p>The primary contact number for the company.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Status</p></td>
+<td><p>Indicates the current state of the master record (e.g., active or inactive).</p></td>
+</tr>
+<tr class="row-even"><td><p>Entity Type</p></td>
+<td><p>Displays business classification along with an entity type symbol</p>
+<ul class="simple">
+<li><p>SL- Single Location</p></li>
+<li><p>BR- Branch</p></li>
+<li><p>GP- Global Parent</p></li>
+<li><p>DP- Domestic Parent</p></li>
+<li><p>HQ- Headquarters</p></li>
+<li><p>PA- Parent</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Actions</p></td>
+<td><p><strong>Unmerge Action</strong> – Allows the user to initiate unmerge request.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="audit-trials">
+<h3>Audit Trials<a class="headerlink" href="#audit-trials" title="Link to this heading">¶</a></h3>
+<p>The Audit Trails section maintains a detailed log of all actions performed on the company record, providing transparency and accountability.</p>
+<figure class="align-default">
+<img alt="_images/14-7.png" src="_images/14-7.png" />
+</figure>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Timestamp</p></td>
+<td><p>When the action was performed.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Entity Type</p></td>
+<td><p>Nature of the action (e.g., Merge, Update, Unmerge).</p></td>
+</tr>
+<tr class="row-even"><td><p>User</p></td>
+<td><p>Username or system agent responsible for the change.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Details</p></td>
+<td><p>Summary of what was modified or executed.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="view-history">
+<h2>1.5 View History<a class="headerlink" href="#view-history" title="Link to this heading">¶</a></h2>
+<p>Clicking on the <strong>View History</strong> feature allows users to track and audit the sequence of historical changes performed on a mastered entity record. This enhances transparency and supports data governance by showing how the entity has evolved over time.</p>
+<figure class="align-default">
+<img alt="_images/14-8.png" src="_images/14-8.png" />
+</figure>
+<p>Once opened, the history view displays a chronological list of key actions performed on the entity. Each entry includes:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Action Type</p></td>
+<td><p>Indicates the kind of action taken (e.g., Profile Merged, Entity Merged, Entity Unmerged).</p></td>
+</tr>
+<tr class="row-odd"><td><p>Timestamp</p></td>
+<td><p>Date and time when the action occurred.</p></td>
+</tr>
+<tr class="row-even"><td><p>Related Entity</p></td>
+<td><p>If applicable, shows the name or ID of the entity involved in the action.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure class="align-default">
+<img alt="_images/14-9.png" src="_images/14-9.png" />
+</figure>
+<p><strong>Note</strong>:</p>
+<ul class="simple">
+<li><p><strong>Back Button</strong>: Located within the View History panel, this returns the user to the main <strong>Detailed View</strong> of the record.</p></li>
+<li><p><strong>View Full Details</strong> Button: Available within each history entry or at the top of the history panel, this button provides deeper insight into the entity’s full profile and attributes at the time of the historical change.</p></li>
+<li><p>If history data fails to load, display: <em>“Failed to load record history. Please refresh the panel.”</em></p></li>
+</ul>
 </section>
 </section>
 
@@ -334,6 +991,18 @@
             <ul>
 <li><a class="reference internal" href="#">1. Home</a><ul>
 <li><a class="reference internal" href="#process-indicator">1.1 Process Indicator</a></li>
+<li><a class="reference internal" href="#expanded-view-for-detailed-insights">1.2 Expanded View for Detailed Insights</a></li>
+<li><a class="reference internal" href="#filters">1.3 Filters</a></li>
+<li><a class="reference internal" href="#view-full-details">1.4 View Full Details</a><ul>
+<li><a class="reference internal" href="#company-profile"><em>Company Profile</em></a></li>
+<li><a class="reference internal" href="#key-executives"><em>Key Executives</em></a></li>
+<li><a class="reference internal" href="#corporate-structure"><em>Corporate Structure</em></a></li>
+<li><a class="reference internal" href="#identifiers"><em>Identifiers</em></a></li>
+<li><a class="reference internal" href="#included-companies">Included Companies</a></li>
+<li><a class="reference internal" href="#audit-trials">Audit Trials</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#view-history">1.5 View History</a></li>
 </ul>
 </li>
 </ul>
