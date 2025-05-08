@@ -125,19 +125,19 @@ The number of entities- up to **1,000 mastered records**—is displayed at the t
       - One or more unique identifiers associated with the entity.  
         List of Identifiers:
 
-        1. National ID (NID)
+        * National ID (NID)
 
-        2. Account ID (AID)  
+        * Account ID (AID)  
 
-        3. Customer ID (CID)
+        * Customer ID (CID)
 
-        4. Finance ID (FID)
+        * Finance ID (FID)
 
-        5. Supplier ID (SID) 
+        * Supplier ID (SID) 
 
-        6. Registration Number
+        * Registration Number
 
-        7. DUNS No.
+        * DUNS No.
 
         **Note**: There could be multiple IDs from different sources.
     * - Contact Name
@@ -477,13 +477,20 @@ This section lists all companies that have been merged into the current master r
     * - ID
       - One or more unique identifiers associated with the entity.  
         List of Identifiers:  
-        1. National ID (NID)  
-        2. Account ID (AID)  
-        3. Customer ID (CID)  
-        4. Finance ID (FID)  
-        5. Supplier ID (SID)  
-        6. Registration Number  
-        7. DUNS No.  
+
+        * National ID (NID) 
+
+        * Account ID (AID)  
+
+        * Customer ID (CID)
+
+        * Finance ID (FID)  
+
+        * Supplier ID (SID)
+        
+        * Registration Number
+        
+        * DUNS No.  
         **Note**: There could be multiple IDs from different sources.
     * - Contact Name
       - The name of the primary contact person associated with the company.
