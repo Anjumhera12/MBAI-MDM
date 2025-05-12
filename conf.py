@@ -25,3 +25,18 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = 'furo'
 html_static_path = ['_static']
+html_logo = "_static/logo.png"
+html_favicon = '_static/favicon.ico'
+html_title = 'Product Documentation'
+html_css_files = [
+    'newStyle.css',
+    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css',
+    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css',
+]
+html_show_sphinx = False
+ 
+html_show_index = False
+
+
+
+
