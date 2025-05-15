@@ -1,5 +1,5 @@
 Getting Started
-===============
+==================
 
 The Dashboard is the default landing page for the MDM application, providing a comprehensive overview of platform activities. Some general troubleshooting instructions have been given below: 
 

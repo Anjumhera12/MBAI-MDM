@@ -1,5 +1,5 @@
 6. Settings 
------------
+-------------
 
 This section provides tools and configurations for admins to manage users—helping maintain privacy, protect sensitive information, and control user permissions.  
 

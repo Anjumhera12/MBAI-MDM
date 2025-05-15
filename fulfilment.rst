@@ -1,5 +1,5 @@
 4. Fulfilment
--------------
+---------------
 
 Fulfillment refers to the process of ensuring that all requested operations, such as data matching, record processing, or service delivery, are completed accurately and efficiently. It plays a crucial role in streamlining workflows and meeting user requirements. Navigate to **Fulfilment** and select **Bulk Match** from the left-side menu.
 
@@ -145,9 +145,11 @@ The table below provides descriptions of the match settings options listed above
    * - Job Name (Optional)
      - A user-defined label to identify or describe the matching job (optional field).
 
-After you click on **next** a page opens which displays the following details; 
+After you click on **next**
 
 .. figure:: images/31-9.png
+
+A new window opens with the details you have already entered. 
 
 .. figure:: images/31-10.png
 
@@ -159,19 +161,20 @@ The table below shows the description of the following details;
    * - Field
      - Description
    * - File Name
-     - Florida_Com.csv
+     - The name of the file uploaded for the bulk match process. (ex: Florida_Com.csv) 
    * - Job Name
-     - Company Details
+     - A custom label assigned to identify the bulk match job. (ex: Company Details).
    * - Limit
-     - 5
+     - Specifies the maximum number of records allowed in the uploaded file. (ex: 5) 
    * - Retention Period (Days)
-     - 5
+     - Defines how many days the matched data will be retained in the system. (ex: 5) 
    * - File format
-     - CSV
+     - Indicates the type of file uploaded(ex: CSV) 
    * - High Priority
-     - No
+     - Option to mark the job for faster processing. 
+       (ex: Yes/No) Such as here-No 
    * - Minimum Score
-     - 6
+     - The threshold match score required for a record to be considered a valid match. (ex: 6) 
 
 Click on the **Submit** option, a screen appears showing the file upload in progress. 
 

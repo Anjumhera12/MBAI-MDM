@@ -9,21 +9,20 @@ MDM documentation
 Introduction
 ============
 
-In today’s data-driven world, organizations face the challenge of managing fragmented, inconsistent, and outdated data, which can hinder business performance. Matchbook AI’s MDM solution addresses this by unifying, governing, and enriching critical data across the organization. 
+**MDM** is a modern, lightweight master data management solution designed to simplify and streamline essential data management activities without the complexity of traditional MDM systems. Featuring an intuitive, user-friendly interface, MDM empowers users to manage automated data matching, perform data stewardship tasks, monitor data quality, and oversee data ingestion and master workflows with ease and confidence.
 
-The platform leverages AI to transform siloed data into clean, actionable intelligence, ensuring consistency and reliability throughout. It seamlessly integrates with other systems, supporting smarter decision-making and optimized business operations. 
+Built to align with core business objectives, the platform balances usability and robust functionality. This guide provides comprehensive instructions for configuring, managing, and effectively using MDM. It outlines key platform features, core workflows, and best practices to help users unlock the full value of their MDM experience.
 
-This guide provides comprehensive instructions for configuring, managing, and effectively using MDM. It outlines key platform features, core workflows, and best practices to help users unlock the full value of their MDM experience. 
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
    
-   getting_started
-   home
-   data_stewardship
-   master
-   fulfillment
-   report
-   settings
-   
+   getting_started1
+   home1
+   data_stewardship1
+   search1
+   fulfilment1
+   reports1
+   settings1
+   about_us1
